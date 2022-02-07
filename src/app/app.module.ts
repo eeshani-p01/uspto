@@ -4,10 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core';
+import {
+  CheckRequestStatusComponent,
+  ConnectDataComponent,
+  HomeComponent,
+  RequestAccessComponent,
+  SystemStatusComponent
+} from './modules';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    RequestAccessComponent,
+    CheckRequestStatusComponent,
+    ConnectDataComponent,
+    SystemStatusComponent,
   ],
   imports: [
     BrowserModule,

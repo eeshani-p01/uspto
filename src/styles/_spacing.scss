@@ -1,0 +1,24 @@
+// Default 4 mutliples paddings and margins  e.g, mt-24 or pb-20 etc
+$spaceamounts: (4, 8, 10, 12, 16, 20, 24, 28, 32, 36, 40, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: toRem($space) !important;
+    }
+
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: toRem($space) !important;
+    }
+  }
+}
+
+//margin related utilities add here
+
+//padding related utilities add here

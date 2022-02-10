@@ -3,3 +3,18 @@
 .bg-primary-blue {
     background-color: $u-blue-600 !important;
 }
+
+.bg-gray-200 {
+    background-color: $u-gray-200;
+}
+
+
+// text utilities
+.text-primary-orange {
+    color: $u-orange;
+}
+
+// button classes
+.ui.button.primary-orange, .ui.buttons.primary-orange .button {
+    background-color: $u-orange;;
+}

@@ -1,0 +1,15 @@
+.ui.large a.item {
+    padding: 8px 0 !important;
+    margin-left: 26px !important;
+    color: white !important;
+}
+
+.ui.secondary.pointing.menu .right .item {
+    border-width: 1px;
+    transition: ease .3s;
+
+    &:hover{
+        border-color: white;
+        color: #FF7F00 !important;
+    }
+}

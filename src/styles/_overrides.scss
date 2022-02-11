@@ -2,6 +2,10 @@ body {
     @extend .bg-gray-200;
 }
 
-.ui.secondary.inverted.menu .text-primary-orange .active.item {
+*, body {
+    //font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+}
+
+.ui.secondary.inverted.menu .active.item {
     @extend .text-primary-orange;
 }

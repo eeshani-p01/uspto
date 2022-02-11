@@ -1,5 +1,5 @@
 // Default 4 mutliples paddings and margins  e.g, mt-24 or pb-20 etc
-$spaceamounts: (4, 8, 10, 12, 16, 20, 24, 28, 32, 36, 40, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$spaceamounts: (4, 8, 10, 12, 16, 20, 24, 28, 32, 36, 40, 50, 75, 100, 140); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @function toRem($value) {
@@ -20,5 +20,30 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 }
 
 //margin related utilities add here
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.mx-auto{
+    @extend .ml-auto;
+    @extend .mr-auto;
+}
+
+.my-auto{
+    @extend .mt-auto;
+    @extend .mb-auto;
+}
 
 //padding related utilities add here

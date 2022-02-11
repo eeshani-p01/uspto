@@ -9,3 +9,8 @@ body {
 .ui.secondary.inverted.menu .active.item {
     @extend .text-primary-orange;
 }
+
+// buttons
+button.ui.button {
+    @extend .rounded-0;
+}

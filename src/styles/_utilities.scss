@@ -20,11 +20,23 @@
     background-color: $u-gray-400;
 }
 
+.bg-white {
+    background-color: $u-white;
+}
 
 // text utilities
 .text-primary-orange {
     color: $u-orange !important;
 }
+
+.text-primary-blue-500 {
+    color: $u-blue-500 !important;
+}
+
+.text-primary-blue-600 {
+    color: $u-blue-600 !important;
+}
+
 
 // button classes
 .ui.button.primary-orange, .ui.buttons.primary-orange .button {

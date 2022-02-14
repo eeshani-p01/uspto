@@ -37,19 +37,19 @@
 }
 
 .h-100px {
-  height: 100px;
+  height: 6.25rem;
 }
 
 .h-80 {
-    height: 80px;
+    height: 5rem;
 }
 
 .h-190 {
-     height: 190px;
+     height: 11.875rem;
 }
 
 .h-500 {
-    height: 500px;
+    height: 31.25rem;
 }
 
 // width utilities
@@ -58,33 +58,33 @@
 }
 
 .w-140 {
-    width: 140px;
+    width: 8.75rem;
 }
 
 .w-200 {
-    width: 200px;
+    width: 12.5rem;
 }
 
 .max-w-700 {
-    max-width: 700px;
+    max-width: 43.75rem;
 }
 
 .max-w-1040 {
-    max-width: 1040px !important;
+    max-width: 65rem !important;
 }
 
 .max-w-1640 {
-  max-width: 1640px;
+  max-width: 102.5rem;
 }
 
 
 // border utilities
 .border-right {
-  border-right: 1px solid $u-white;
+  border-right: .0625rem solid $u-white;
 }
 
 .border {
-    border: 1px solid $u-white;
+    border: .0625rem solid $u-white;
 }
 
 .border-gray-500 {

@@ -4,8 +4,20 @@
     background-color: $u-blue-600 !important;
 }
 
+.bg-primary-blue-500 {
+    background-color: $u-blue-500 !important;
+}
+
 .bg-gray-200 {
     background-color: $u-gray-200;
+}
+
+.bg-gray-300 {
+    background-color: $u-gray-300;
+}
+
+.bg-gray-400 {
+    background-color: $u-gray-400;
 }
 
 
@@ -17,4 +29,8 @@
 // button classes
 .ui.button.primary-orange, .ui.buttons.primary-orange .button {
     background-color: $u-orange;;
+}
+
+.ui.button.primary-blue-500, .ui.buttons.primary-blue-500 .button {
+    background-color: $u-blue-500 !important;
 }

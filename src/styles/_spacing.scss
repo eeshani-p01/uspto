@@ -21,19 +21,19 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 //margin related utilities add here
 .ml-auto {
-    margin-left: auto;
+    margin-left: auto !important;
 }
 
 .mr-auto {
-    margin-right: auto;
+    margin-right: auto !important;
 }
 
 .mt-auto {
-    margin-top: auto;
+    margin-top: auto !important;
 }
 
 .mb-auto {
-    margin-bottom: auto;
+    margin-bottom: auto !important;
 }
 
 .mx-auto{

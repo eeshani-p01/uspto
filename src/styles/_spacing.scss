@@ -1,5 +1,5 @@
 // Default 4 mutliples paddings and margins  e.g, mt-24 or pb-20 etc
-$spaceamounts: (0, 4, 8, 10, 12, 16, 20, 24, 28, 32, 36, 40, 50, 75, 100, 140); // Adjust this to include the pixel amounts you need.
+$spaceamounts: (0, 4, 6, 8, 10, 12, 16, 20, 24, 28, 32, 36, 40, 50, 75, 100, 140); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @function toRem($value) {
@@ -48,6 +48,13 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 .mt-200 {
     margin-top: 12.5rem;
+}
+
+.no-gutters {
+  @extend .mt-0;
+  @extend .mb-0;
+  @extend .mr-0;
+  @extend .ml-0;
 }
 
 //padding related utilities add here

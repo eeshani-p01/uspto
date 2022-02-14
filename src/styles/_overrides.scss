@@ -20,3 +20,8 @@ button.ui.button {
 ul.unstyle {
     list-style: none;
 }
+
+// header 
+.ui.header.no-gutters:first-child {
+    @extend .mt-0;
+}

@@ -1,60 +1,90 @@
 // Bg Utilities
 
 .bg-primary-blue {
-    background-color: $u-blue-600 !important;
+  background-color: $u-blue-600 !important;
 }
 
 .bg-primary-blue-500 {
-    background-color: $u-blue-500 !important;
+  background-color: $u-blue-500 !important;
 }
 
 .bg-gray-200 {
-    background-color: $u-gray-200;
+  background-color: $u-gray-200;
 }
 
 .bg-gray-300 {
-    background-color: $u-gray-300;
+  background-color: $u-gray-300;
 }
 
 .bg-gray-400 {
-    background-color: $u-gray-400;
+  background-color: $u-gray-400;
 }
 
 .bg-white {
-    background-color: $u-white;
+  background-color: $u-white;
 }
 
 // text utilities
 .text-primary-orange {
-    color: $u-orange !important;
+  color: $u-orange !important;
 }
 
 .text-primary-blue-200 {
-    color: $u-blue-200 !important;
+  color: $u-blue-200 !important;
 }
 
 .text-primary-blue-500 {
-    color: $u-blue-500 !important;
+  color: $u-blue-500 !important;
 }
 
 .text-primary-blue-600 {
-    color: $u-blue-600 !important;
+  color: $u-blue-600 !important;
 }
 
 .text-gray-400 {
-    color: $u-gray-400 !important;
+  color: $u-gray-400 !important;
 }
 
 .text-white {
-    color: $u-white !important;
+  color: $u-white !important;
 }
-
 
 // button classes
-.ui.button.primary-orange, .ui.buttons.primary-orange .button {
-    background-color: $u-orange;;
+.ui.button.primary-orange,
+.ui.buttons.primary-orange .button {
+  background-color: $u-orange;
 }
 
-.ui.button.primary-blue-500, .ui.buttons.primary-blue-500 .button {
-    background-color: $u-blue-500 !important;
+.ui.button.primary-blue-500,
+.ui.buttons.primary-blue-500 .button {
+  background-color: $u-blue-500 !important;
+}
+
+// border utilities
+.border-bottom {
+  border-bottom: 0.0625rem solid $u-white;
+}
+
+.border-right {
+  border-right: 0.0625rem solid $u-white;
+}
+
+.border {
+  border: 0.0625rem solid $u-white;
+}
+
+.border-gray-500 {
+  border-color: $u-gray-500;
+}
+
+.border-blue-500 {
+  border-color: $u-blue-500;
+}
+
+.border-3 {
+    border-width: 3px;
+}
+
+.rounded-0 {
+  border-radius: 0;
 }

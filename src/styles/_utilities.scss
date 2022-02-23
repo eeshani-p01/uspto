@@ -1,7 +1,14 @@
 // Bg Utilities
+.bg-primary-orange {
+  background-color: $u-orange !important;
+}
 
 .bg-primary-blue {
   background-color: $u-blue-600 !important;
+}
+
+.bg-primary-blue-400 {
+  background-color: $u-blue-400 !important;
 }
 
 .bg-primary-blue-500 {
@@ -24,6 +31,10 @@
   background-color: $u-gray-400;
 }
 
+.bg-gray-450 {
+  background-color: $u-gray-450;
+}
+
 .bg-white {
   background-color: $u-white;
 }
@@ -35,6 +46,10 @@
 
 .text-primary-blue-200 {
   color: $u-blue-200 !important;
+}
+
+.text-primary-blue-400 {
+  color: $u-blue-400 !important;
 }
 
 .text-primary-blue-500 {
@@ -54,6 +69,10 @@
 }
 
 // button classes
+.ui.button {
+  @extend .bg-gray-450;
+}
+
 .ui.button.primary-orange,
 .ui.buttons.primary-orange .button {
   background-color: $u-orange;
@@ -73,12 +92,14 @@
   border-right: 0.0625rem solid $u-white;
 }
 
-.border {
-  border: 0.0625rem solid $u-white;
-}
-
 .border-gray-500 {
   border-color: $u-gray-500;
+}
+
+.border-blue-400 {
+  &, &.border{
+    border-color: $u-blue-400 !important;
+  }
 }
 
 .border-blue-500 {
@@ -90,15 +111,29 @@
 }
 
 .border-primary-orange {
-    border-color: $u-orange;
+  &, &.border {
+    border-color: $u-orange !important;
+  }
+}
+
+.border-0 {
+  border: none !important;
+}
+
+.border {
+  border: 0.0625rem solid $u-white !important;
 }
 
 .border-2 {
-    border-width: 2px;
+    border-width: 2px !important;
 }
 
 .border-3 {
     border-width: 3px;
+}
+
+.border-bottom-dashed {
+  border-bottom-style: dashed !important;
 }
 
 .rounded-0 {

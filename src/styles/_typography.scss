@@ -1,5 +1,5 @@
 .text-20 {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
 }
 
 .text-22 {
@@ -15,7 +15,7 @@
 }
 
 .text-50 {
-    font-size: 3.125rem;
+    font-size: 3.125rem !important;
 }
 
 .text-70 {
@@ -25,6 +25,15 @@
 // alignment
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// text decoration
+.text-underline {
+    text-decoration: underline;
 }
 
 

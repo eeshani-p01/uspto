@@ -3,6 +3,10 @@
   display: flex !important;
 }
 
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -66,7 +70,7 @@
 
 // width utilities
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .w-140 {
@@ -87,4 +91,10 @@
 
 .max-w-1640 {
   max-width: 102.5rem;
+}
+
+
+// box shadow
+.box-shadow-0 {
+  box-shadow: none !important;
 }

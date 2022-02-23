@@ -35,7 +35,7 @@
     flex-wrap: wrap;
 }
 
-.ui.column.grid>[class*="six wide"].column, .ui.grid>.column.row>[class*="six wide"].column, .ui.grid>.row>[class*="six wide"].column, .ui.grid>[class*="six wide"].column {
+.ui.grid.equal>[class*="six wide"].column {
   width: 33.33% !important;
 }
 

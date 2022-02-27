@@ -25,3 +25,13 @@ ul.unstyle {
 .ui.header.no-gutters:first-child {
     @extend .mt-0;
 }
+
+// input = checkbox
+.ui.checkbox.center label:before {
+    margin: auto;
+    bottom: 0;
+}
+
+.ui.checkbox input:checked~label:after {
+    @extend .text-primary-blue-200;
+}

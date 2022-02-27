@@ -31,8 +31,8 @@
         <div class="two column row">
             <div class="eleven wide column">
                 <div class="ui raised segment bg-gray-100 mb-20 pr-40 pl-40 pt-28 pb-40">
-                    <div class="border-bottom border-2 border-blue-600">
-                        <h1 class="font-normal text-primary-blue-600">
+                    <div class="border-bottom border-blue-600">
+                        <h1 class="font-normal text-primary-blue-600  mb-4">
                             <i class="text-primary-orange user circle icon"></i>
                             User Profile
                         </h1>
@@ -41,32 +41,195 @@
                         <form class="ui form mt-20">
                             <div class="two fields">
                                 <div class="field huge">
-                                    <label>First Name</label>
+                                    <label class="text-primary-blue-600">First Name*</label>
                                     <input class="rounded-0" class="rounded-0" placeholder="First Name" name="name"
                                         type="text">
                                 </div>
                                 <div class="field huge">
-                                    <label>Last Name</label>
+                                    <label class="text-primary-blue-600">Last Name*</label>
                                     <input class="rounded-0" class="rounded-0" placeholder="Last Name" name="name"
                                         type="text">
                                 </div>
                             </div>
                             <div class="field huge">
-                                <label>Email Address</label>
+                                <label class="text-primary-blue-600">Email Address*</label>
                                 <input class="rounded-0" class="rounded-0" placeholder="Enter Email" name="email"
                                     type="email">
                             </div>
                             <div class="field huge">
-                                <label>Phone Number</label>
+                                <label class="text-primary-blue-600">Phone Number*</label>
                                 <input class="rounded-0" class="rounded-0" placeholder="Phone Number" name="contact">
                             </div>
                             <div class="field huge">
-                                <label>Do you have IT East & IT West account?</label>
+                                <label class="text-primary-blue-600">Do you have IT East & IT West account?</label>
                                 <input class="rounded-0" class="rounded-0" placeholder="If Yes, Provide ID Number"
                                     name="contact">
                             </div>
                         </form>
                     </div>
+                </div>
+
+               
+                <div class="ui raised segment bg-gray-100 mb-20 pr-40 pl-40 pt-28 pb-40">
+                    <div class="border-bottom border-blue-600">
+                        <h2 class="font-normal text-primary-blue-600 mb-4">
+                            <i class="text-primary-orange wrench icon"></i>
+                            Request Access to Tools and Environments
+                        </h2>
+                    </div>
+
+                    <div class="mt-20">
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
+                                <div class="ui checkbox center d-flex align-items-center">
+                                    <input type="checkbox" name="x-large">
+                                    <label class="text-white text-20">Kibana</label>
+                                </div>
+                                <div class="ui dropdown simple text-white">
+                                    <h4 class="border-bottom border-gray-200 mb-0 font-normal">
+                                        Production
+                                        <i class="dropdown icon mb-10 ml-20"></i>
+                                    </h4>
+                                    <div class="menu">
+                                      <div class="item">Production</div>
+                                      <div class="item">Deployment</div>
+                                      <div class="item">Development</div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="ui grid no-gutters pb-24">
+                                <div class="two column row pt-20">
+                                    <div class="three wide column text-center">
+                                        <img src="../../../assets/images/home/overview.JPG"/>
+                                    </div>
+                                    <div class="thirteen wide column text-20 text-brown pr-40">
+                                        Kibana dashboard is an open source analytics and visualization platform designed to work with elasticsearch. Kibana gives the ability to search, view, and interact with data stored in elasticsearch indices. This software supports advanced data analysis and visualization of data in a variety of charts, tables, and maps. Kibana interfaces with large amounts of data in a simple browser-based interface, which quickly creates and shares dynamic dashboards that display changes to elasticsearch queries in real time.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
+                                <div class="ui checkbox center d-flex align-items-center">
+                                    <input type="checkbox" name="x-large">
+                                    <label class="text-white text-20">SparkMonitor</label>
+                                </div>
+                                <div class="ui dropdown simple text-white">
+                                    <h4 class="border-bottom border-gray-200 mb-0 font-normal">
+                                        Production
+                                        <i class="dropdown icon mb-10 ml-20"></i>
+                                    </h4>
+                                    <div class="menu">
+                                      <div class="item">Production</div>
+                                      <div class="item">Deployment</div>
+                                      <div class="item">Development</div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="ui grid no-gutters pb-24">
+                                <div class="two column row pt-20">
+                                    <div class="three wide column text-center">
+                                        <img src="../../../assets/images/home/overview.JPG"/>
+                                    </div>
+                                    <div class="thirteen wide column text-20 text-brown pr-40">
+                                        SparkMonitor is an extension for Jupyter Notebook that enables the live monitoring of Apache Spark Jobs spawned from a notebook. The extension provides several features to monitor and debug a Spark job from within the notebook interface itself.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
+                                <div class="ui checkbox center d-flex align-items-center">
+                                    <input type="checkbox" name="x-large">
+                                    <label class="text-white text-20">Zeppelin</label>
+                                </div>
+                                <div class="ui dropdown simple text-white">
+                                    <h4 class="border-bottom border-gray-200 mb-0 font-normal">
+                                        Production
+                                        <i class="dropdown icon mb-10 ml-20"></i>
+                                    </h4>
+                                    <div class="menu">
+                                      <div class="item">Production</div>
+                                      <div class="item">Deployment</div>
+                                      <div class="item">Development</div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="ui grid no-gutters pb-24">
+                                <div class="two column row pt-20">
+                                    <div class="three wide column text-center">
+                                        <img src="../../../assets/images/home/overview.JPG"/>
+                                    </div>
+                                    <div class="thirteen wide column text-20 text-brown pr-40">
+                                        Apache Zeppelin is an open source web-based tool that enables interactive data analytics that will be deployed in the BDR architecture for data ingestion, data exploration, visualization, sharing and collaboration features to Hadoop and Spark.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
+                                <div class="ui checkbox center d-flex align-items-center">
+                                    <input type="checkbox" name="x-large">
+                                    <label class="text-white text-20">Hive</label>
+                                </div>
+                                <div class="ui dropdown simple text-white">
+                                    <h4 class="border-bottom border-gray-200 mb-0 font-normal">
+                                        Production
+                                        <i class="dropdown icon mb-10 ml-20"></i>
+                                    </h4>
+                                    <div class="menu">
+                                      <div class="item">Production</div>
+                                      <div class="item">Deployment</div>
+                                      <div class="item">Development</div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="ui grid no-gutters pb-24">
+                                <div class="two column row pt-20">
+                                    <div class="three wide column text-center">
+                                        <img src="../../../assets/images/home/overview.JPG"/>
+                                    </div>
+                                    <div class="thirteen wide column text-20 text-brown pr-40">
+                                        Apache Hive is a data warehouse software project built on top of Apache Hadoop for providing data summarization, query, and analysis. Hive gives an SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop. Traditional SQL queries must be implemented in the MapReduce Java API to execute SQL applications and queries over distributed data. Hive provides the necessary SQL abstraction to integrate SQL-like queries (HiveQL) into the underlying Java without the need to implement queries in the low-level Java API. Since most data warehousing applications work with SQL-based querying languages, Hive aids portability of SQL-based applications to Hadoop.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
+                                <div class="ui checkbox center d-flex align-items-center">
+                                    <input type="checkbox" name="x-large">
+                                    <label class="text-white text-20">Jupyter Notebook</label>
+                                </div>
+                                <div class="ui dropdown simple text-white">
+                                    <h4 class="border-bottom border-gray-200 mb-0 font-normal">
+                                        Production
+                                        <i class="dropdown icon mb-10 ml-20"></i>
+                                    </h4>
+                                    <div class="menu">
+                                      <div class="item">Production</div>
+                                      <div class="item">Deployment</div>
+                                      <div class="item">Development</div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="ui grid no-gutters pb-24">
+                                <div class="two column row pt-20">
+                                    <div class="three wide column text-center">
+                                        <img src="../../../assets/images/home/overview.JPG"/>
+                                    </div>
+                                    <div class="thirteen wide column text-20 text-brown pr-40">
+                                        Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="ui raised segment mb-20 pr-40 pl-40 pt-40 pb-40">
@@ -83,8 +246,8 @@
 
             <div class="five wide column">
                 <div class="ui raised segment mb-20 pt-28 pl-32 pr-32 pb-50">
-                    <div class="border-bottom border-2 border-blue-600">
-                        <h1 class="font-normal text-primary-blue-600">
+                    <div class="border-bottom border-blue-600">
+                        <h1 class="font-normal text-primary-blue-600 mb-4">
                             <i class="text-primary-orange cogs icon"></i>
                             Resource Link
                         </h1>

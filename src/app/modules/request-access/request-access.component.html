@@ -69,7 +69,65 @@
                     </div>
                 </div>
 
-          
+                <div class="ui raised segment bg-gray-100 mb-20 pr-40 pl-40 pt-28 pb-40">
+                    <div class="border-bottom border-blue-600 mb-20">
+                        <h1 class="font-normal text-primary-blue-600 mb-4">
+                            <i class="text-primary-orange bug icon"></i>
+                            User Type
+                        </h1>
+                    </div>
+                    <div class="accordion-primary radio-white mb-40">
+                        <sui-accordion [closeOthers]="false">
+                            <sui-accordion-panel class="mt-2 d-block">
+                                <div title
+                                    class="text-20 h-41 text-white d-flex align-items-center justify-content-between">
+                                    <sui-radio-button name="type" value="dataUser" [(ngModel)]="userType"
+                                        class="align-middle"><span class=" text-20 text-white">Data User</span>
+                                    </sui-radio-button>
+                                    <h2 class="mt-0 mb-0 mr-6 open">+</h2>
+                                    <i class="icon minus small"></i>
+                                </div>
+                                <div content class="pl-60 pr-100">
+                                    <p class="text-20 pt-20 pb-20"> Any data user shall be able to export data for Excel
+                                        calculation and use, browse data sets and discover data, and provide feedback on
+                                        data</p>
+                                </div>
+                            </sui-accordion-panel>
+                            <sui-accordion-panel class="mt-4 d-block">
+                                <div title
+                                    class="h-41 text-20 text-white d-flex align-items-center justify-content-between">
+                                    <sui-radio-button name="type" value="powerUser" [(ngModel)]="userType"
+                                        class="align-middle">
+                                        <span class=" text-20 text-white">Power User</span>
+                                    </sui-radio-button>
+                                    <h2 class="mt-0 mb-0 mr-6 open">+</h2>
+                                    <i class="icon minus small"></i>
+                                </div>
+                                <div content class="pl-60 pr-100">
+                                    <p class="text-20 pt-20 pb-20">A “Power User” will create visualizations tied to
+                                        existing
+                                        and new data, and nominate new data addition to enterprise catalog</p>
+                                </div>
+                            </sui-accordion-panel>
+                            <sui-accordion-panel class="mt-4 d-block">
+                                <div title
+                                    class="h-41 text-20 text-white d-flex align-items-center justify-content-between">
+                                    <sui-radio-button name="type" value="dataScientist" [(ngModel)]="userType"
+                                        class="align-middle"><span class=" text-20 text-white">Data Scientist</span>
+                                    </sui-radio-button>
+                                    <h2 class="mt-0 mb-0 mr-6 open">+</h2>
+                                    <i class="icon minus small"></i>
+                                </div>
+                                <div content class="pl-60 pr-100">
+                                    <p class="text-20 pt-20 pb-20"> Data Scientists will maintain ML workbooks and other
+                                        complex data discovery tools, and will be tasked with expanding the enterprise
+                                        catalog
+                                    </p>
+                                </div>
+                            </sui-accordion-panel>
+                        </sui-accordion>
+                    </div>
+                </div>
 
                 <div class="ui raised segment bg-gray-100 mb-20 pr-40 pl-40 pt-28 pb-40">
                     <div class="border-bottom border-blue-600">
@@ -385,7 +443,18 @@
                                     </div>
                                     <div class="fourteen wide column text-20 text-brown pr-75">
                                         <div class="ui bulleted list">
-                                            <div class="item text-20 mb-24">Leveraging Apache Nifi, BDR Data pipelines retrieves the Data from TRM and FAST2 databases, and store in the HIVE landing tables. As part of the Data pipelines, BDR uses RBAC and TMNG CMS REST services to retrieve lawcode and Mark images. After the business rules are applied pushes the data to Elastic Search. APIs and UIs are developed to present the data available in Elastic Search.
+                                            <div class="item text-20 mb-24">Leveraging Apache Nifi, BDR Data pipelines
+                                                retrieves
+                                                the Data from TRM and FAST2 databases, and store in the HIVE landing
+                                                tables.
+                                                As
+                                                part of the Data pipelines, BDR uses RBAC and TMNG CMS REST services to
+                                                retrieve
+                                                lawcode and Mark images. After the business rules are applied pushes the
+                                                data to
+                                                Elastic Search. APIs and UIs are developed to present the data available
+                                                in
+                                                Elastic Search.
                                             </div>
                                             <div class="item text-20">
                                                 <div><strong> High Level Capabilities:</strong></div>
@@ -393,13 +462,18 @@
                                                     <div class="d-flex align-items-start">
                                                         <i class="caret right icon text-primary-orange mr-16 ml-4"></i>
                                                         <p class="">
-                                                            BDR-TQR retrieves SOU and PUBs metadata information from TRM Oracle database and First OA and Final OA metadata from FAST Oracle database. 
+                                                            BDR-TQR retrieves SOU and PUBs metadata information from TRM
+                                                            Oracle
+                                                            database and First OA and Final OA metadata from FAST Oracle
+                                                            database.
                                                         </p>
                                                     </div>
                                                     <div class="d-flex align-items-start">
                                                         <i class="caret right icon text-primary-orange mr-12"></i>
                                                         <p class="">
-                                                            It retrieves lawcode from RBAC and Mark images from TMNG CMS REST service.
+                                                            It retrieves lawcode from RBAC and Mark images from TMNG CMS
+                                                            REST
+                                                            service.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -425,15 +499,33 @@
                                     <div class="fourteen wide column text-20 text-brown pr-50">
                                         <div class="ui bulleted list">
                                             <div class="item text-20 mb-24">
-                                                Users can place input .csv file by using SFTP, which contains number of application IDs. By using this input file BDR AI API gets the contractor data from the CPC Oracle DB and machine data from the BDR AI for corresponding application IDs and stores the data in two csv files. Users can compare contractor data and machine data, by giving application ID in the CPC WEB.
+                                                Users can place input .csv file by using SFTP, which contains number of
+                                                application IDs. By using this input file BDR AI API gets the contractor
+                                                data
+                                                from the CPC Oracle DB and machine data from the BDR AI for
+                                                corresponding
+                                                application IDs and stores the data in two csv files. Users can compare
+                                                contractor data and machine data, by giving application ID in the CPC
+                                                WEB.
                                             </div>
                                             <div class="item text-20 mb-24">
-                                                There is separate batch process for cpccode, cstar and cpccode-cstar to generate .csv files for Machine data and Contractor data. 
+                                                There is separate batch process for cpccode, cstar and cpccode-cstar to
+                                                generate
+                                                .csv files for Machine data and Contractor data.
                                             </div>
                                             <div class="item text-20">
-                                                AI-API directly connects with CPC Oracle DB to get the contractor data on the server 
-                                                <a class="text-underline">jdbc:oracle:thin:@//das-gds.uspto.gov:1610/cpcprod_reporting_gds.cpc_prod.oradbcloud.</a>
-                                                To get the Machine Data, AI-API connects to Lucene model. For this model, the Lucene indexes and model files are located in the location data/oa/cpc. BDR AI-API also interface with PATI-CDC to get Meta data.
+                                                AI-API directly connects with CPC Oracle DB to get the contractor data
+                                                on
+                                                the
+                                                server
+                                                <a
+                                                    class="text-underline">jdbc:oracle:thin:@//das-gds.uspto.gov:1610/cpcprod_reporting_gds.cpc_prod.oradbcloud.</a>
+                                                To get the Machine Data, AI-API connects to Lucene model. For this
+                                                model,
+                                                the
+                                                Lucene indexes and model files are located in the location data/oa/cpc.
+                                                BDR
+                                                AI-API also interface with PATI-CDC to get Meta data.
                                             </div>
                                         </div>
                                     </div>

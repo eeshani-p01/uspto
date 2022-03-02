@@ -36,7 +36,7 @@
 }
 
 .bg-white {
-  background-color: $u-white;
+  background-color: $u-white !important;
 }
 
 // text utilities
@@ -146,4 +146,9 @@
 
 .rounded-0 {
   border-radius: 0 !important;
+}
+
+.rounded-top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }

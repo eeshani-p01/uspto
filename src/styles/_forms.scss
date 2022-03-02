@@ -1,5 +1,36 @@
 .field {
-    &.huge input {
-        height: 3.4375rem;
-    }
+  &.huge input {
+    @extend .h-55;
+  }
+}
+
+// input = checkbox
+.ui.checkbox label{
+    @extend .cursor-pointer;
+}
+.ui.checkbox input:checked ~ label:after {
+  @extend .text-primary-blue-200;
+  height: unset;
+}
+
+.ui.checkbox.center label,
+.center.ui.radio.checkbox label {
+  &:before,
+  &:after {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+
+// radio
+.radio-white .ui.radio.checkbox label {
+  &:before {
+    background-color: transparent !important;
+    @extend .border;
+  }
+  &:after {
+      @extend .bg-white;
+  }
 }

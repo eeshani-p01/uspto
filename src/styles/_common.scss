@@ -1,4 +1,12 @@
 // flex common styles
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
 .d-flex {
   display: flex !important;
 }
@@ -36,10 +44,10 @@
 }
 
 .flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.ui.grid.equal>[class*="six wide"].column {
+.ui.grid.equal > [class*="six wide"].column {
   width: 33.33% !important;
 }
 
@@ -52,8 +60,16 @@
   height: 6.25rem;
 }
 
+.h-41 {
+  height: 2.929rem;
+}
+
+.h-55 {
+  height: 3.4375rem;
+}
+
 .h-80 {
-    height: 5rem;
+  height: 5rem;
 }
 
 .h-110 {
@@ -61,7 +77,7 @@
 }
 
 .h-190 {
-     height: 11.875rem;
+  height: 11.875rem;
 }
 
 .h-400 {
@@ -69,7 +85,7 @@
 }
 
 .h-500 {
-    height: 31.25rem;
+  height: 31.25rem;
 }
 
 // width utilities
@@ -78,27 +94,31 @@
 }
 
 .w-140 {
-    width: 8.75rem;
+  width: 8.75rem;
 }
 
 .w-200 {
-    width: 12.5rem;
+  width: 12.5rem;
 }
 
 .max-w-700 {
-    max-width: 43.75rem;
+  max-width: 43.75rem;
 }
 
 .max-w-1040 {
-    max-width: 65rem !important;
+  max-width: 65rem !important;
 }
 
 .max-w-1640 {
   max-width: 102.5rem;
 }
 
-
 // box shadow
 .box-shadow-0 {
   box-shadow: none !important;
+}
+
+// cursor
+.cursor-pointer {
+  cursor: pointer;
 }

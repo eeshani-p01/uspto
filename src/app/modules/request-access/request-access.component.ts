@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequestAccessComponent implements OnInit {
 
+  userType: string;
   constructor() { }
 
   ngOnInit(): void {

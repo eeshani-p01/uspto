@@ -82,7 +82,7 @@
                                 <div title
                                     class="text-20 h-41 text-white d-flex align-items-center justify-content-between">
                                     <sui-radio-button name="type" value="dataUser" [(ngModel)]="userType"
-                                        class="align-middle"><span class=" text-20 text-white">Data User</span>
+                                        class="center"><span class=" text-20 text-white">Data User</span>
                                     </sui-radio-button>
                                     <h2 class="mt-0 mb-0 mr-6 open">+</h2>
                                     <i class="icon minus small"></i>
@@ -97,7 +97,7 @@
                                 <div title
                                     class="h-41 text-20 text-white d-flex align-items-center justify-content-between">
                                     <sui-radio-button name="type" value="powerUser" [(ngModel)]="userType"
-                                        class="align-middle">
+                                        class="center">
                                         <span class=" text-20 text-white">Power User</span>
                                     </sui-radio-button>
                                     <h2 class="mt-0 mb-0 mr-6 open">+</h2>
@@ -113,7 +113,7 @@
                                 <div title
                                     class="h-41 text-20 text-white d-flex align-items-center justify-content-between">
                                     <sui-radio-button name="type" value="dataScientist" [(ngModel)]="userType"
-                                        class="align-middle"><span class=" text-20 text-white">Data Scientist</span>
+                                        class="center"><span class=" text-20 text-white">Data Scientist</span>
                                     </sui-radio-button>
                                     <h2 class="mt-0 mb-0 mr-6 open">+</h2>
                                     <i class="icon minus small"></i>
@@ -142,8 +142,8 @@
                             <div
                                 class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="x-large">
-                                    <label class="text-white text-20">Kibana</label>
+                                    <input type="checkbox" id="kibana" name="x-large">
+                                    <label class="text-white text-20" for="kibana">Kibana</label>
                                 </div>
                                 <div class="ui dropdown simple text-white">
                                     <h4 class="border-bottom border-gray-200 mb-0 font-normal">
@@ -179,8 +179,8 @@
                             <div
                                 class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="x-large">
-                                    <label class="text-white text-20">SparkMonitor</label>
+                                    <input type="checkbox" id="spark" name="x-large">
+                                    <label class="text-white text-20" for="spark">SparkMonitor</label>
                                 </div>
                                 <div class="ui dropdown simple text-white">
                                     <h4 class="border-bottom border-gray-200 mb-0 font-normal">
@@ -213,8 +213,8 @@
                             <div
                                 class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="x-large">
-                                    <label class="text-white text-20">Zeppelin</label>
+                                    <input type="checkbox" name="x-large" id="zep">
+                                    <label class="text-white text-20" for="zep">Zeppelin</label>
                                 </div>
                                 <div class="ui dropdown simple text-white">
                                     <h4 class="border-bottom border-gray-200 mb-0 font-normal">
@@ -247,8 +247,8 @@
                             <div
                                 class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="x-large">
-                                    <label class="text-white text-20">Hive</label>
+                                    <input type="checkbox" name="x-large" id="hive">
+                                    <label class="text-white text-20" for="hive">Hive</label>
                                 </div>
                                 <div class="ui dropdown simple text-white">
                                     <h4 class="border-bottom border-gray-200 mb-0 font-normal">
@@ -286,8 +286,8 @@
                             <div
                                 class="d-flex align-items-center justify-content-between bg-primary-blue-400 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="x-large">
-                                    <label class="text-white text-20">Jupyter Notebook</label>
+                                    <input type="checkbox" name="x-large" id="jupyter">
+                                    <label class="text-white text-20" for="jupyter">Jupyter Notebook</label>
                                 </div>
                                 <div class="ui dropdown simple text-white">
                                     <h4 class="border-bottom border-gray-200 mb-0 font-normal">
@@ -331,8 +331,8 @@
                         <div>
                             <div class="bg-primary-blue-500 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="portal">
-                                    <label class="text-white text-20">BDR Portal</label>
+                                    <input type="checkbox" name="portal" id="bdr">
+                                    <label class="text-white text-20" for="bdr">BDR Portal</label>
                                 </div>
                             </div>
                             <div class="ui grid no-gutters pb-24">
@@ -357,8 +357,8 @@
                         <div>
                             <div class="bg-primary-blue-500 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="PTAB">
-                                    <label class="text-white text-20">PTAB</label>
+                                    <input type="checkbox" name="PTAB" id="ptab">
+                                    <label class="text-white text-20" for="ptab">PTAB</label>
                                 </div>
                             </div>
                             <div class="ui grid no-gutters pb-24">
@@ -432,8 +432,8 @@
                         <div>
                             <div class="bg-primary-blue-500 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="TQR">
-                                    <label class="text-white text-20">TQR</label>
+                                    <input type="checkbox" name="TQR" id="tqr">
+                                    <label class="text-white text-20" for="tqr">TQR</label>
                                 </div>
                             </div>
                             <div class="ui grid no-gutters pb-24">
@@ -487,8 +487,8 @@
                         <div>
                             <div class="bg-primary-blue-500 pr-12 pl-24 pt-12 pb-12">
                                 <div class="ui checkbox center d-flex align-items-center">
-                                    <input type="checkbox" name="CPC">
-                                    <label class="text-white text-20">CPC</label>
+                                    <input type="checkbox" name="CPC" id="cpc">
+                                    <label class="text-white text-20" for="cpc">CPC</label>
                                 </div>
                             </div>
                             <div class="ui grid no-gutters pb-24">
